@@ -200,6 +200,7 @@ install_chart_releaser() {
         echo $PATH
         echo '***'
         echo $cache_dir
+        cr --help
     fi
 }
 
