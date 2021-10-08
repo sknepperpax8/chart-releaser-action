@@ -197,6 +197,9 @@ install_chart_releaser() {
 
         echo 'Adding cr directory to PATH...'
         export PATH="$cache_dir:$PATH"
+        echo $PATH
+        echo '***'
+        echo $cache_dir
     fi
 }
 
