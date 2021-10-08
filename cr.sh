@@ -190,7 +190,8 @@ install_chart_releaser() {
         mkdir -p "$cache_dir"
 
         echo "Installing chart-releaser..."
-        curl -sSLo cr.tar.gz "https://github.com/sknepperpax8/chart-releaser/releases/download/$version/chart-releaser_${version#v}_linux_amd64.tar.gz"
+        # curl -sSLo cr.tar.gz "https://github.com/sknepperpax8/chart-releaser/releases/download/$version/chart-releaser_${version#v}_linux_amd64.tar.gz"
+        curl -sSLo cr.tar.gz "https://github.com/sknepperpax8/chart-releaser/archive/refs/tags/$version.tar.gz"
         tar -xzf cr.tar.gz -C "$cache_dir"
         rm -f cr.tar.gz
 
